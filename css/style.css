@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+#psd {
+  /* Позиционируем макет */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -675px;
+  width: 100%;
+  /* Делаем его полупрозрачным */
+  opacity: .5;
+  /* Оставляем возможность взаимодействия с элементами */
+  pointer-events: none;
+  /* Инвертируем изображение в вашем любимом -webkit (-blink) браузере */
+  -webkit-filter: invert(100%); }
+
+body:hover #psd {
+  /* Прячем картинку при наведении */
+  opacity: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #737373;
+  text-decoration: none; }
+
+body {
+  font-family: sans-serif; }
+
+ul li {
+  list-style-type: none; }
+
+.container {
+  position: relative;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header {
+  background: linear-gragient(to top, grey -100%, #fff); }
+  .header .container {
+    width: 1024px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: strach; }
+
+.header__logo {
+  padding-top: 32px;
+  padding-left: 5px; }
+
+.nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+  .nav .item__link {
+    position: relative;
+    display: block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 48px 22px 26px;
+    font-size: 22px;
+    width: 69px;
+    border-right: solid 1px grey; }
+    .nav .item__link .icon {
+      font-size: 20px; }
+    .nav .item__link .text {
+      font-size: 17px;
+      padding-top: 11px; }
+  .nav .item__link:hover, .nav .item__link:hover .item__link .icon {
+    background: linear-gradient(to top, #ff7700 -70%, rgba(255, 255, 255, 0.3) 70%);
+    text-shadow: 1px 1px 0 #fff; }
+  .nav .item__link:hover::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ff7700; }
+  .nav li:last-child .item__link {
+    border: none; }
+
+.content {
+  position: relative;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 49px;
+  letter-spacing: 1px; }
+
+.logo-text {
+  color: darkgrey; }
+
+.logo-text--orange {
+  color: #ff7700; }
