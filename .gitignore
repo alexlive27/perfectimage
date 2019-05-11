@@ -1,0 +1,7 @@
+/node_modules
+/psdmaket
+*.json
+*.jade
+*.psd
+*.scss
+gulpfile.js
