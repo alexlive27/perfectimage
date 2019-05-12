@@ -302,3 +302,18 @@ button {
       background: #45668e; }
   #gallery .gallery__item:nth-child(4n) {
     margin-right: 0; }
+
+.footer {
+  position: relative;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px 0;
+  padding-right: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end; }
