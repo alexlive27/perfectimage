@@ -72,15 +72,29 @@ ul li {
     padding: 48px 22px 26px;
     font-size: 22px;
     width: 69px;
-    border-right: solid 1px grey; }
+    border-right: solid 1px darkgrey; }
     .nav .item__link .icon {
-      font-size: 20px; }
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: contain; }
     .nav .item__link .text {
       font-size: 17px;
       padding-top: 11px; }
-  .nav .item__link:hover, .nav .item__link:hover .item__link .icon {
+    .nav .item__link .icon--home {
+      background-image: url("../img/icon1.png"); }
+    .nav .item__link .icon--gallery {
+      background-image: url("../img/icon2.png"); }
+    .nav .item__link .icon--members {
+      background-image: url("../img/icon3.png"); }
+    .nav .item__link .icon--logout {
+      background-image: url("../img/icon4.png"); }
+  .nav .item__link:hover {
     background: linear-gradient(to top, #ff7700 -70%, rgba(255, 255, 255, 0.3) 70%);
     text-shadow: 1px 1px 0 #fff; }
+    .nav .item__link:hover .icon {
+      opacity: 0.7; }
   .nav .item__link:hover::after {
     content: '';
     position: absolute;
@@ -112,3 +126,55 @@ ul li {
 
 .logo-text--orange {
   color: #ff7700; }
+
+#search {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 160px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  max-height: 200px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column; }
+  #search .title {
+    font-weight: bold;
+    font-size: 32px; }
+  #search .form {
+    width: 710px;
+    padding-top: 26px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center; }
+  #search .search__text {
+    width: 475px;
+    padding: 14px;
+    box-sizing: border-box;
+    padding-right: 115px;
+    font-size: 21px;
+    border-radius: 5px;
+    border: solid 1px darkgrey; }
+  #search .search__text:focus {
+    outline: none; }
+  #search .button {
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    padding: 8px 21px;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit; }
+  #search .search__button-browse {
+    position: relative;
+    margin-left: -115px; }
+  #search .search__button-upload {
+    margin-left: 24px;
+    font-weight: bold;
+    font-size: 26px;
+    background: linear-gradient(to top, #bd5800 -70%, #ff7700 68%); }
