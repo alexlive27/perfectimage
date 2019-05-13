@@ -71,12 +71,16 @@ button {
       font-size: 17px;
       padding-top: 11px; }
     .nav .item__link .icon--home {
+      background-image: url("img/icon1.png");
       background-image: url("../img/icon1.png"); }
     .nav .item__link .icon--gallery {
+      background-image: url("img/icon2.png");
       background-image: url("../img/icon2.png"); }
     .nav .item__link .icon--members {
+      background-image: url("img/icon3.png");
       background-image: url("../img/icon3.png"); }
     .nav .item__link .icon--logout {
+      background-image: url("img/icon4.png");
       background-image: url("../img/icon4.png"); }
   .nav .item__link:hover {
     background: linear-gradient(to top, #ff7700 -70%, rgba(255, 255, 255, 0.3) 70%);
