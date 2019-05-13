@@ -180,6 +180,7 @@ button {
   #gallery .gallery__item {
     max-width: 212px;
     max-height: 290px;
+    min-height: 306px;
     position: relative;
     box-sizing: border-box;
     background: linear-gradient(to top, grey -5%, #fff 5%);
@@ -187,7 +188,6 @@ button {
     box-shadow: 0px 0px 5px 0px grey;
     margin-top: 20px;
     margin-right: 20px;
-    zoom: 1.09;
     /* хром, сафари */
     /* ie 10+ */
     /* фф (свойство больше не работает, других способов тоже нет)*/ }
@@ -237,6 +237,8 @@ button {
       display: -o-flex;
       display: flex;
       justify-content: space-around;
+      align-items: center;
+      height: 42px;
       max-height: 42px; }
     #gallery .gallery__item .gallery__about::-webkit-scrollbar {
       width: 0; }
@@ -248,7 +250,8 @@ button {
       position: relative;
       font-size: 13px;
       text-align: center;
-      width: 80%; }
+      width: 80%;
+      margin-top: 5px; }
     #gallery .gallery__item .favorite {
       position: relative;
       min-width: 28px;
@@ -261,12 +264,14 @@ button {
       font-size: 32px;
       color: #ff7700; }
     #gallery .gallery__item .fa-star {
+      clear: both;
+      vertical-align: top;
       color: #fff;
       font-size: 16px;
       left: 50%;
-      margin-left: -8px;
+      margin-left: -7px;
       top: 50%;
-      margin-top: -8px; }
+      margin-top: -7px; }
     #gallery .gallery__item .favorite:hover .fa-circle {
       color: #b15300; }
     #gallery .gallery__item .gallery__share {
@@ -310,10 +315,11 @@ button {
   margin-right: auto;
   position: relative;
   padding: 40px 0;
-  padding-right: 40px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   justify-content: flex-end; }
+  .footer .footer__copyright {
+    margin-right: 55px; }
